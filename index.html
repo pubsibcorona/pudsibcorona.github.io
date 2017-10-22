@@ -12,10 +12,9 @@
     <link rel="apple-touch-icon" sizes="32x32" href="/favicon32.ico">
     <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
 
+    <link rel="stylesheet" href="/libs/bootstrap.min.css">
     <link rel="stylesheet" href="/libs/slick.css">
     <link rel="stylesheet" href="/styles/main.css">
-
-
 </head>
 <body>
 
@@ -24,7 +23,7 @@
         <img src="/images/logo.png" alt="">
     </div>
     <div class="contacts container">
-        <div id="address" class="contacts__address">
+        <div class="contacts__address">
             Невский пр., 66, Санкт-Петербург
         </div>
         <a href="tel:8 (812) 966-89-10" class="contacts__phone">
@@ -89,11 +88,6 @@
 </section>
 <section class="menu">
     <h2 id="menu">Меню</h2>
-    <div class="menu-content">
-        <img src="/images/menu/menu1.png" alt="">
-        <img src="/images/menu/menu2.png" alt="">
-        <img src="/images/menu/menu3.png" alt="">
-    </div>
     <div class="slider-content">
         <img src="/images/menu/exampl1.png" alt="">
         <img src="/images/menu/exampl2.png" alt="">
@@ -102,6 +96,7 @@
         <img src="/images/menu/exampl2.png" alt="">
         <img src="/images/menu/exampl3.png" alt="">
     </div>
+    <button class="btn-menu" data-toggle="modal" data-target="#myModal">Ознакомиться с ценами</button>
 </section>
 <section class="event">
     <h2 id="events">Фото с мероприятий</h2>
@@ -118,9 +113,45 @@
     <div class="logo">
         <img src="/images/logo.png" alt="">
     </div>
+    <div class="contacts container">
+        <div id="address" class="contacts__address">
+            Невский пр., 66, Санкт-Петербург
+        </div>
+        <a href="tel:8 (812) 966-89-10" class="contacts__phone">
+            тел. 8 (812) 966-89-10
+        </a>
+        <div class="social">
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </div>
 </footer>
 
+<div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="popup-slider">
+                    <div class="popup-item">
+                        <img src="/images/menu/menu1.png" alt="">
+                    </div>
+                    <div class="popup-item">
+                        <img src="/images/menu/menu2.png" alt="">
+                    </div>
+                    <div class="popup-item">
+                        <img src="/images/menu/menu3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="/libs/jquery.min.js"></script>
+<script src="/libs/bootstrap.min.js"></script>
 <script src="/libs/slick.min.js"></script>
 <script src="/scripts/main.js"></script>
 
